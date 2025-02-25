@@ -1,0 +1,11 @@
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW001','AICM_T1',19.432707,-99.086743,'PEON DE LOS BAOS','Venustiano Carranza');
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW002','AICM_T1',19.432648,-99.086765,'ON DE LOS BAÃOS','Venustiano Carranza');
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW003','AICM_T1',19.432638,-99.086909,'PEON DE LOS BAÃOS','Venustiano Carranza');
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW004','AICM_T1',19.432686,-99.086705,'PEÃ‘ON DE LOS BAÃ‘OS','Venustiano Carranza');
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW005','AICM_T1',19.432901,-99.087065,'PEÃ‘ON DE LOS BAÃ‘OS','Venustiano Carranza');
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW006','AICM_T1',19.432764,-99.086544,'PEÃ‘ON DE LOS BAÃ‘OS','Venustiano Carranza');
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW007','AICM_T1',19.432522,-99.086155,'PEÃ‘ON DE LOS BAÃ‘OS','Venustiano Carranza');
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW008','AICM_T1',19.432884,-99.08633,'PEÃ‘ON DE LOS BAÃ‘OS','Venustiano Carranza');
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW009','AICM_T1',19.433179,-99.085611,'PEÃ‘ON DE LOS BAÃ‘OS','Venustiano Carranza');
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW010','AICM_T1',19.433638,-99.084976,'PEÃ‘ON DE LOS BAÃ‘OS','Venustiano Carranza');
+INSERT INTO wifi_access_point(id,programa,lat,lon,colonia,alcaldia) VALUES ('AICMT1-GW011','AICM_T1',19.433783,-99.084714,'PEÃ‘ON DE LOS BAÃ‘OS','Venustiano Carranza');

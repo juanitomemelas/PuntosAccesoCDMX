@@ -1,0 +1,6 @@
+com\pipeline\wifi\wifiDemo\entity\WifiAccessPointQueryResolver.class
+com\pipeline\wifi\wifiDemo\controller\WifiController.class
+com\pipeline\wifi\wifiDemo\repository\WifiRepository.class
+com\pipeline\wifi\wifiDemo\entity\WifiAccessPoint.class
+com\pipeline\wifi\wifiDemo\service\WifiService.class
+com\pipeline\wifi\wifiDemo\WifiDemoApplication.class
