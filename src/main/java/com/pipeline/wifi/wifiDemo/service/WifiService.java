@@ -18,6 +18,13 @@ public class WifiService {
 		this.wifiRepository = wifiRepository;		
 	}
 
+	/**.
+	 * Servicio para buscar y discriminar los puntos de acceso por ID.
+	 * @param id
+	 * El ID a comparar.
+	 * @return
+	 * Lista con puntos de acceso.
+	 */
 	@Transactional(readOnly = true)
     public WifiAccessPoint getWifiAccessPointsById(final String id) {
         return wifiRepository.findAll().stream()
@@ -26,15 +33,40 @@ public class WifiService {
 				.orElse(null);
     }
 
+	/**
+	 * Servicio que trae todos los puntos de acceso de la base de datos.
+	 * @return
+	 * Lista con los puntos de acceso que se tienen en la base.
+	 */
 	public List<WifiAccessPoint> findAllWifi() {
 		return wifiRepository.findAll();
 	}
 	
+	/**
+	 * Servicio que obtiene los puntos de acceso que se tienen en la base de datos pero paginados.
+	 * @param pageSize
+	 * El tamaño de los resultados por página.
+	 * @param offset
+	 * La página de resultados.
+	 * @return
+	 * Arreglo con los puntos de acceso definido por las variables de pagesize y offset.
+	 */
 	@Transactional(readOnly = true)
 	public List<WifiAccessPoint> findAllWifiPaginated(final int pageSize, final int offset) {
 		return wifiRepository.findAll(PageRequest.of(offset, pageSize)).getContent();
 	}
 
+	/**
+	 * Servicio que obtiene los puntos de acceso que se tienen en la base de datos por colonia y paginados.
+	 * @param colonia
+	 * La colonia a buscar.
+	 * @param pageSize
+	 * El tamaño de los resultados por página.
+	 * @param offset
+	 * La página de resultados.
+	 * @return
+	 * Arreglo con los puntos de acceso definido por las variables de pagesize y offset.
+	 */
 	public List<WifiAccessPoint> findAllWifiByColoniaPaginated(
 			final String colonia,
 			final int pageSize,
@@ -44,7 +76,7 @@ public class WifiService {
 				.getContent()
 				.stream()
 				.filter(
-					wifiAccessPoint -> wifiAccessPoint.getColonia().equals(colonia)
+					wifiAccessPoint -> wifiAccessPoint.getColonia().equalsIgnoreCase(colonia)
 				)
 				.toList();
 	}

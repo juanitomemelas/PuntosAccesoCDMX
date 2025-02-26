@@ -95,22 +95,15 @@ Las consultas quye se tienen (y que se encuentran en el archivo **schema.graphql
 
 
 ## Diagrama general de la solución (servicios y bd)
-```mermaid
-architecture-beta
-    service left_disk(disk)[Disk]
-    service top_disk(disk)[Disk]
-    service bottom_disk(disk)[Disk]
-    service top_gateway(internet)[Gateway]
-    service bottom_gateway(internet)[Gateway]
-    junction junctionCenter
-    junction junctionRight
+### Estructura general de la aplicación
+![image](https://github.com/user-attachments/assets/321df2d3-5fd3-41bd-ad26-bd68b006414f)
 
-    left_disk:R -- L:junctionCenter
-    top_disk:B -- T:junctionCenter
-    bottom_disk:T -- B:junctionCenter
-    junctionCenter:R -- L:junctionRight
-    top_gateway:B -- T:junctionRight
-    bottom_gateway:T -- B:junctionRight
-```
+### Estructura básica de la arquitectura
+
+Esta aplicación utiliza el archivo de **compose.yaml** para levantar y/o conectarse a una imagen de docker que contiene la ultima versión de MySQL.
+![image](https://github.com/user-attachments/assets/55202402-f785-42ee-a944-4a343baf0a0c)
+
+
+
 ## Desarrollo de la solución
 El código de la solución se encuentra en este [repositorio](https://github.com/juanitomemelas/PuntosAccesoCDMX).

@@ -5,14 +5,15 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-
+/**
+ * Entidad para obtener el objeto de WifiAccesPoint desde la tabla de wifi_access_point.
+ * @author mahonry
+ *
+ */
 @Entity
 @Table(name = "wifi_access_point")
 @Data
 public class WifiAccessPoint {	
-
-	//private static final long serialVersionUID = 7266139754715243383L;
-	
 
 	@Id
 	@Column(name = "id")
