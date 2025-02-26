@@ -1,0 +1,30 @@
+type WifiAccessPoint {
+    id: String
+    programa: String
+    lat: Float
+    lon: Float
+    colonia: String
+    alcaldia: String
+}
+
+type Query {
+"""
+query para obtener todos los puntos de acceso por nombre.
+"""
+	wifiAccessPointById(id:String):WifiAccessPoint
+	
+"""
+query para obtener todos los puntos de acceso.
+"""	
+    wifiAccessPoints:[WifiAccessPoint]
+
+"""
+query para obtener todos los puntos de acceso pero paginados.
+"""
+    wifiAccessPointsPaginated(pageSize: Int!, offset: Int!):[WifiAccessPoint]
+
+"""
+query para obtener todos los puntos de acceso por colonia.
+"""
+    wifiAccessPointsByColoniaPaginated(colonia: String, pageSize: Int!, offset: Int!):[WifiAccessPoint]
+}
